@@ -1,90 +1,91 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
-
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+# Task - Gadget Inventor
 
 ## Deadline
-This assignment is due before the next scheduled class.
+This assignment is due before the next class session.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+For detailed instructions on how to complete and submit this assignment, refer to the assignments section of the course instructions available on the course webpage.
 
 ## Preparation
-
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
-
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+- Complete and review questions in Module 2: Exploring Classes in Java.
+- Access the OLI material:
+  - Via the link provided in your course's learning platform.
+  - Or directly via the webpage link given in the module.
 
 ## Learning Goals
+After completing this week's assignment, you should be familiar with:
+* Creating and designing Java classes and objects.
+* Understanding and using instance fields.
+* Understanding and implementing constructors.
+* Implementing getters and setters methods.
+* Manipulating objects using the dot operator.
+* Outputting information to the terminal.
+* Utilizing the main method effectively.
+* Understanding variable scope and shadowing.
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+## Troubleshooting
+If you encounter any problems, follow these steps:
+1. Review this week's [posted issues](link) to see if other students have encountered similar problems.
+2. If your issue is not listed, create a [New Issue](link) with a descriptive title.
+3. Get in-person help during the weekly lab session.
 
-## Troubleshooting Guide
+## Assignment
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+In the scenic town of TechVille, a passionate inventor named Alex is known for creating extraordinary gadgets out of ordinary objects. Your task is to model these incredible gadgets in Java!
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+### Exercise 1.0: Begin the Invention Journey
 
-## Assignment Details
+To kick things off, create a new Java file named `Gadget.java` in your project's `src` folder. In this file, define a class named `Gadget`.
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+Now, let's model our first gadget. Add the main method to your `Gadget` class and define variables with the following attributes:
 
-### Task 1: Class Creation
+- `String` modelName: "SparkPlug"
+- `int` powerUse: 15
+- `boolean` isWireless: true
+- `String` function: "Generates Sparks"
+- `boolean` isOn: false
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+Test your code to ensure everything works as expected.
 
-### Task 2: Defining Properties
+### Exercise 1.1: Expanding the Invention Portfolio
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+After creating your first gadget, let's invent two more, increasing your total number of gadgets to three. Print information about all three gadgets to the console.
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+### Exercise 1.2: Using Fields
 
-### Task 3: Spawning Galaxy Pets
+Now, reimagine how to store gadget data. Instead of local variables in the main method, utilize class fields. Create fields for each attribute mentioned in Exercise 1.0. 
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+Instantiate a new gadget object in the main method, but this time, assign the attribute values through the object itself using dot notation.
 
-### Task 4: Encapsulation with Getters and Setters
+### Exercise 1.3: Getters and Setters
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+Introduce encapsulation by setting your fields to private and creating getters and setters for each attribute. This practice enforces secure access and modification of your gadget attributes.
 
-### Task 5: Constructing with Constructors
+### Exercise 1.4: Constructor
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+Implement a constructor for the `Gadget` class that accepts arguments for each field. This allows you to instantiate gadget objects more efficiently by providing attribute values at creation time.
 
-### Task 6: Display Information
+### Exercise 1.5: More Gadgets, More Fun
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+Utilize the constructor to add two more gadgets to your portfolio. Observe how much cleaner and more manageable your code becomes with this approach.
 
-### Task 7: The Cosmic Challenge
+### Exercise 1.6: `printInfo` Method
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+To further streamline your code, implement a `printInfo()` method in the `Gadget` class. This method should print all relevant information about a gadget.
 
-### Task 8: Understanding Scope and Shadowing
+### Exercise 1.7: Gadget Interaction
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
+Let's add some interactivity. Implement a method called `activateGadget` that simulates turning a gadget on or off. This method should also print the gadget's new state to the console.
 
-## Final Checklist
+### Exercise 1.8: Exploring Variable Shadowing
 
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
+Examine the examples of variable shadowing provided and understand how it can be resolved using the `this` keyword. You may be asked to discuss this concept in class.
 
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+## Checklist
+- Complete the introductory exercise of creating multiple gadgets.
+- Define fields for the `Gadget` class and test object manipulation.
+- Implement getters and setters for all fields.
+- Use a constructor to streamline object creation.
+- Implement the `printInfo()` method.
+- Create an `activateGadget()` method for interactive functionality.
+- Review variable shadowing examples and understand their resolution.
